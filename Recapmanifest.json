@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "reCAPTCHA Disabler",
+  "version": "1.0",
+  "description": "A Chrome extension that disables Google reCAPTCHA or 'Verify you're not a bot' prompts",
+  "permissions": ["activeTab", "https://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
